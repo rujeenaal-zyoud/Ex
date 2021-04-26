@@ -12,24 +12,32 @@
 
    </header> 
 
-   <div id='parent'></div>
+   <div >
    <form action="" id="form">
        <fieldset>
            <label for="StudentEmail">Student Email</label>
-           <input type="text"   id="StudentEmail" name="StudentEmail" autocomplete="off">
+           <input type="email"   id="StudentEmail" name="StudentEmail" autocomplete="off" required>
            <br>
            
            <label for="StudentMobileNumber">Student Mobile Number</label>
-           <input type="number"   id="StudentMobileNumber" name="StudentMobileNumber" autocomplete="off">
+           <input type="number"   id="StudentMobileNumber" name="StudentMobileNumber" autocomplete="off" required>
            <br>
            
-           <label for="Tuition">Tuition</label>
-           <input type="number"   id="Tuition" name="Tuition" autocomplete="off">
+           <label for="Tuition">Tuition:</label>
+<select id="Tuition" name="Tuition">
+  <option value="500JD">500JD</option>
+  <option value="1000JD">1000JD</option>
+  <option value="1500JD">1500JD</option>
+</select>
 <br>
 <input type="submit"   id="submit" value="Submit" >
 
        </fieldset>
    </form>
+</div>
+<br>
+<div id='parent'></div>
+<div id='total'></div>
 </body>
 <script src="js/app.js"></script>
 </html>
